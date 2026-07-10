@@ -1,0 +1,31 @@
+# Indicators of Compromise - Windows Logging SOC Investigation
+
+Suspicious File:
+ckjg.exe
+
+Suspicious File Path:
+C:\Users\sarah.miller\Downloads\ckjg.exe
+
+Downloaded From:
+hxxp://gettsveriff[.]com/bgj3/ckjg.exe
+
+User:
+THM-PC\sarah.miller
+
+Host:
+THM-PC
+
+Relevant Event IDs:
+4624 - Successful logon
+4625 - Failed logon
+4634 - Logoff
+4672 - Special privileges assigned
+4732 - User added to local group
+4688 - New process created
+Sysmon 1 - Process creation
+Sysmon 3 - Network connection
+Sysmon 15 - File stream created
+Sysmon 22 - DNS query
+
+Verdict:
+Suspicious / Malicious Activity Identified
